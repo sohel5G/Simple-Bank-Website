@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,21 @@
     <!-- Css Framework  -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="bg-slate-400 text-center h-screen flex flex-col items-center justify-center">
     <header>
-        <h1 class="text-4xl text-center">Please Login</h1>
+        <h1 class="text-5xl text-white">Please Login</h1>
     </header>
     <main>
-
+        <input class="input input-bordered w-full mt-9" type="email" name="email" id="mail-input"
+            placeholder="Enter email address">
+        <input class="input input-bordered w-full mt-4" type="password" name="password" id="pass-input"
+            placeholder="Enter password">
+        <button class="btn btn-neutral mt-4" id="login-submit-btn">Log In</button>
     </main>
-    <footer>
-        <p class="text-xs">Copyright August 17 2023 &copy; | All right reserved</p>
+    <footer class="absolute bottom-2">
+        <p class="text-xs text-center text-white">Copyright August 17 2023 &copy; | All right reserved</p>
     </footer>
+<script src="./js/login.js"></script>
 </body>
 </html>
