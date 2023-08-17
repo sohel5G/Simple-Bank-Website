@@ -12,34 +12,34 @@
     <!-- Css Framework  -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-400 text-center h-screen flex flex-col items-center justify-center">
+<body class="bg-slate-400 text-center lg:h-screen p-5 lg:flex lg:flex-col lg:items-center lg:justify-center">
     <header>
         <h1 class="text-5xl text-white">Dashboard</h1>
     </header>
     <main>
-        <section class="flex gap-4 mt-10">
-            <div class="bg-lime-500 text-white w-80 px-3 py-10 rounded-xl">
+        <section class="lg:flex lg:gap-4 mt-10">
+            <div class="bg-lime-500 text-white lg:w-80 px-3 py-10 rounded-xl mt-4">
                 <p class="text-2xl">Deposit</p>
                 <p class="text-5xl">$<span id="current-deposit">00</span></p>
             </div>
-            <div class="bg-yellow-400 text-white w-80 px-3 py-10 rounded-xl">
+            <div class="bg-yellow-400 text-white lg:w-80 px-3 py-10 rounded-xl mt-4">
                 <p class="text-2xl">Withdraw</p>
                 <p class="text-5xl">$<span id="current-withdraw">00</span></p>
             </div>
-            <div class="bg-orange-400 text-white w-80 px-3 py-10 rounded-xl">
+            <div class="bg-orange-400 text-white lg:w-80 px-3 py-10 rounded-xl mt-4">
                 <p class="text-2xl">Balance</p>
                 <p class="text-5xl">$<span id="current-balance">500</span></p>
             </div>
         </section>
 
-        <section class="flex gap-4 mt-10">
-            <div class="bg-sky-400 w-2/4 px-3 py-4 rounded-xl">
+        <section class="lg:flex lg:gap-4 mt-10 mb-5">
+            <div class="bg-sky-400 lg:w-2/4 px-3 py-4 rounded-xl mt-4">
                 <p class="text-3xl text-white ">Please Deposit</p>
                 <input class="input input-bordered mt-4" type="number" id="deposit-input"
                     placeholder="Enter Amount"><br>
                 <button class="btn btn-neutral mt-4" id="deposit-submit-btn">Deposit</button>
             </div>
-            <div class="bg-green-400 w-2/4 px-3 py-4 rounded-xl">
+            <div class="bg-green-400 lg:w-2/4 px-3 py-4 rounded-xl mt-4">
                 <p class="text-3xl text-white">Please Withdraw</p>
                 <input class="input input-bordered mt-4" type="number" id="withdraw-input"
                     placeholder="Enter Amount"><br>
@@ -47,7 +47,7 @@
             </div>
         </section>
     </main>
-    <footer class="absolute bottom-2">
+    <footer class="lg:absolute lg:bottom-2">
         <p class="text-xs text-center text-white">Copyright August 17 2023 &copy; | All right reserved</p>
     </footer>
 
