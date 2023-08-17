@@ -13,15 +13,36 @@
 </head>
 <bod class="bg-slate-400 text-center h-screen flex flex-col items-center justify-center">
     <header>
-        <h1 class="text-5xl text-white">Please Login</h1>
+        <h1 class="text-5xl text-white">Dashboard</h1>
     </header>
     <main>
-        <input class="input input-bordered w-full mt-9" type="email" name="email" id="mail-input"
-            placeholder="Enter email address">
-        <input class="input input-bordered w-full mt-4" type="password" name="password" id="pass-input"
-            placeholder="Enter password">
-        <button class="btn btn-neutral mt-4" id="login-submit-btn">Log In</button>
-        <p class="text-xs mt-24 text-gray-300">Default = email: admin@admin.com | password: admin </p>
+        <section class="flex gap-4 mt-10">
+            <div class="bg-lime-500 text-white w-80 px-3 py-10 rounded-xl">
+                <p class="text-2xl">Deposit</p>
+                <p class="text-5xl">$<span id="current-deposit">00</span></p>
+            </div>
+            <div class="bg-yellow-400 text-white w-80 px-3 py-10 rounded-xl">
+                <p class="text-2xl">Withdraw</p>
+                <p class="text-5xl">$<span id="current-withdraw">00</span></p>
+            </div>
+            <div class="bg-orange-400 text-white w-80 px-3 py-10 rounded-xl">
+                <p class="text-2xl">Balance</p>
+                <p class="text-5xl">$<span id="current-balance">00</span></p>
+            </div>
+        </section>
+
+        <section class="flex gap-4 mt-10">
+            <div class="bg-sky-400 w-2/4 px-3 py-4 rounded-xl">
+                <p class="text-3xl text-white ">Please Deposit</p>
+                <input class="input input-bordered mt-4" type="number" id="deposit-input" placeholder="Enter Amount"><br>
+                <button class="btn btn-neutral mt-4" id="deposit-submit-btn">Deposit</button>
+            </div>
+            <div class="bg-green-400 w-2/4 px-3 py-4 rounded-xl">
+                <p class="text-3xl text-white">Please Withdraw</p>
+                <input class="input input-bordered mt-4" type="number" id="withdraw-input" placeholder="Enter Amount"><br>
+                <button class="btn btn-neutral mt-4" id="withdraw-submit-btn">withdraw</button>
+            </div>
+        </section>
     </main>
     <footer class="absolute bottom-2">
         <p class="text-xs text-center text-white">Copyright August 17 2023 &copy; | All right reserved</p>
