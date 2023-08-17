@@ -5,7 +5,8 @@ document.getElementById('login-submit-btn').addEventListener('click', function()
 
     if( mailInputValue === 'admin@admin.com' && passInputValue === 'admin'){
         window.location.href = 'dashboard.html';
+    }else{
+        alert('Please enter a valid login');
     }
 
 });
-
