@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
 
     <!-- Css Framework  -->
-    <script src="https://cdn.tailwindcss.com"></script>    
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<bod class="bg-slate-400 text-center h-screen flex flex-col items-center justify-center">
+<body class="bg-slate-400 text-center h-screen flex flex-col items-center justify-center">
     <header>
         <h1 class="text-5xl text-white">Dashboard</h1>
     </header>
@@ -27,19 +28,21 @@
             </div>
             <div class="bg-orange-400 text-white w-80 px-3 py-10 rounded-xl">
                 <p class="text-2xl">Balance</p>
-                <p class="text-5xl">$<span id="current-balance">00</span></p>
+                <p class="text-5xl">$<span id="current-balance">500</span></p>
             </div>
         </section>
 
         <section class="flex gap-4 mt-10">
             <div class="bg-sky-400 w-2/4 px-3 py-4 rounded-xl">
                 <p class="text-3xl text-white ">Please Deposit</p>
-                <input class="input input-bordered mt-4" type="number" id="deposit-input" placeholder="Enter Amount"><br>
+                <input class="input input-bordered mt-4" type="number" id="deposit-input"
+                    placeholder="Enter Amount"><br>
                 <button class="btn btn-neutral mt-4" id="deposit-submit-btn">Deposit</button>
             </div>
             <div class="bg-green-400 w-2/4 px-3 py-4 rounded-xl">
                 <p class="text-3xl text-white">Please Withdraw</p>
-                <input class="input input-bordered mt-4" type="number" id="withdraw-input" placeholder="Enter Amount"><br>
+                <input class="input input-bordered mt-4" type="number" id="withdraw-input"
+                    placeholder="Enter Amount"><br>
                 <button class="btn btn-neutral mt-4" id="withdraw-submit-btn">withdraw</button>
             </div>
         </section>
@@ -49,5 +52,6 @@
     </footer>
 
     <script src="./js/dashboard.js"></script>
-</bod>
+</body>
+
 </html>

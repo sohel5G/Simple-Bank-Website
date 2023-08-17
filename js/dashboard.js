@@ -1,9 +1,9 @@
 
-document.getElementById('deposit-submit-btn').addEventListener('click', function(){
+document.getElementById('deposit-submit-btn').addEventListener('click', function () {
     let depositInput = document.getElementById('deposit-input');
     let depositInputValue = depositInput.value;
-    
-    if(isNaN(parseFloat(depositInputValue))){
+
+    if (isNaN(parseFloat(depositInputValue))) {
         alert('Please enter a number');
         return
     }
@@ -22,11 +22,11 @@ document.getElementById('deposit-submit-btn').addEventListener('click', function
 });
 
 
-document.getElementById('withdraw-submit-btn').addEventListener('click', function(){
+document.getElementById('withdraw-submit-btn').addEventListener('click', function () {
     let withdrawInput = document.getElementById('withdraw-input');
     let withdrawInputValue = parseFloat(withdrawInput.value);
 
-    if(isNaN(withdrawInputValue)){
+    if (isNaN(withdrawInputValue)) {
         alert('Please enter a number');
         return
     }
@@ -37,7 +37,7 @@ document.getElementById('withdraw-submit-btn').addEventListener('click', functio
     let currentBalanceElement = document.getElementById('current-balance');
     let currentBalance = parseFloat(currentBalanceElement.innerText);
 
-    if(withdrawInputValue > currentBalance){
+    if (withdrawInputValue > currentBalance) {
         alert('Please, you don\'t have enough money, Deposit first');
         return
     }
@@ -50,5 +50,3 @@ document.getElementById('withdraw-submit-btn').addEventListener('click', functio
 
     withdrawInput.value = '';
 });
-
-
