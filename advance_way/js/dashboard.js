@@ -3,11 +3,14 @@ document.getElementById('deposit-submit-btn').addEventListener('click', function
         alert('Please enter a valid number');
         return
     }
+
     let totalDiposit = getInputValueByIdAsNumber('deposit-input') + getElementValueByIdAsNumber('current-deposit');
     setElementValueByIdAsNumber('current-deposit', totalDiposit);
 
     let totalBlance = getInputValueByIdAsNumber('deposit-input') + getElementValueByIdAsNumber('current-balance');
     setElementValueByIdAsNumber('current-balance', totalBlance);
+    
+    document.getElementById('deposit-input').value = ''; 
 });
 
 document.getElementById('withdraw-submit-btn').addEventListener('click', function () {
@@ -24,4 +27,6 @@ document.getElementById('withdraw-submit-btn').addEventListener('click', functio
 
     let totalBlance = getElementValueByIdAsNumber('current-balance') - getInputValueByIdAsNumber('withdraw-input');
     setElementValueByIdAsNumber('current-balance', totalBlance);
+
+    document.getElementById('withdraw-input').value = '';
 });
