@@ -7,6 +7,7 @@ function getInputValueByIdAsNumber(id) {
     let inputValue = document.getElementById(id);
     let inputValueString = inputValue.value;
     let inputValueNumber = parseFloat(inputValueString);
+    // inputValue.value = '';
     return inputValueNumber;
 }
 function getElementValueByIdAsNumber(id) {
@@ -20,4 +21,3 @@ function setElementValueByIdAsNumber(id, value) {
     elementValue.innerText = value;
 
 }
-
